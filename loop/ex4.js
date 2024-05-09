@@ -3,6 +3,12 @@
 
 let numero = parseInt(prompt("Digite um número de 1 a 10"))
 
-for (let tabuada  = 1; tabuada <= 10; tabuada++) {
-    console.log(tabuada * numero)
+if (!isNaN(numero)) {
+    for (let tabuada  = 1; tabuada <= 10; tabuada++) {
+        console.log(tabuada * numero)
+    }
+}
+
+else {
+    console.log("Numero invalido. Por favor, digite um numero válido")
 }
